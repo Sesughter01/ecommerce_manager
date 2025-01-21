@@ -1,13 +1,14 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { WishlistItem  } from "@/shared/types/wishlistItem";
 import { toast } from "react-toastify";
 
-type WishlistItem = {
-  id: number;
-  name: string;
-  price: number;
-  qty: number;
-  [key: string]: any;
-};
+// type WishlistItem = {
+//   id: number;
+//   name: string;
+//   price: number;
+//   qty: number;
+//   [key: string]: any;
+// };
 
 type WishlistState = {
   wishlist: WishlistItem[];

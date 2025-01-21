@@ -37,7 +37,11 @@
       ],
       "@/store": [
         "./src/features/store"
+      ],
+      "@/data/*": [
+        "./src/data/*"
       ]
+      
     }
   },
   "include": [

@@ -60,7 +60,7 @@ const CartItems = () => {
             </Link>
           </td>
 
-          <td className="product-price">${item.price}</td>
+          <td className="product-price">${item.price.max}</td>
 
           <td className="product-quantity">
             <div className="item-quantity">
@@ -79,7 +79,7 @@ const CartItems = () => {
 
           <td className="product-subtotal"> 
             <span className="amount">
-              ${(item.qty * item.price).toFixed(2)}
+              ${(item.qty * item.price.max).toFixed(2)}
             </span>
           </td>
 
